@@ -26,6 +26,7 @@ View layout ;
         layout = findViewById(R.id.layout);
 
 
+
         ArrayList<String> colors = new ArrayList<String>();
         colors.add("Red");
         colors.add("Blue");
