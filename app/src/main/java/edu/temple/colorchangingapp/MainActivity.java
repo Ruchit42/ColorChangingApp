@@ -3,6 +3,7 @@ package edu.temple.colorchangingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,7 @@ import android.graphics.Color;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_TEXT = "edu.temple.colorchingapp.EXTRA_TEXT";
 GridView choose ;
 View layout ;
 
@@ -44,27 +46,41 @@ View layout ;
 
                 // layout.setBackgroundColor();
                 if (p.matches("Red")) {
+                    openActivity2(p);
 
-                    layout.setBackgroundColor(Color.RED);
+                   // layout.setBackgroundColor(Color.RED);
 
                 } else if (p.matches("Blue")) {
-                    layout.setBackgroundColor(Color.BLUE);
+                    openActivity2(p);
+                    //layout.setBackgroundColor(Color.BLUE);
                 } else if (p.matches("Green")) {
                     layout.setBackgroundColor(Color.GREEN);
+                    openActivity2(p);
                 } else if (p.matches("Pink")) {
                     layout.setBackgroundColor(Color.MAGENTA);
+                    openActivity2(p);
                 }else if (p.matches("Gray")) {
+                    openActivity2(p);
                     layout.setBackgroundColor(Color.GRAY);
                 } else if (p.matches("White")){
-                    layout.setBackgroundColor(Color.WHITE);
+                    openActivity2(p);
+                  //  layout.setBackgroundColor(Color.WHITE);
                 }else if (p.matches("Yellow")){
-                    layout.setBackgroundColor(Color.YELLOW);
+                    openActivity2(p);
+                    //layout.setBackgroundColor(Color.YELLOW);
                 }else if (p.matches("Cyan")){
-                    layout.setBackgroundColor(Color.CYAN);
+                    openActivity2(p);
+                    //layout.setBackgroundColor(Color.CYAN);
                 }
             }
         });
 
+    }
+    public void openActivity2(String color){
+
+        Intent intent = new Intent (this,CanvasActivity.class);
+        intent.putExtra("message_key",color);
+        startActivity(intent);
     }
 }
 
