@@ -4,6 +4,7 @@ package edu.temple.colorchangingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.icu.text.CaseMap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,7 +25,8 @@ View layout ;
         setContentView(R.layout.activity_main);
         choose = findViewById(R.id.myView);
         layout = findViewById(R.id.layout);
-
+        System.out.println(R.string.Title);
+        setTitle("PalateActivity");
 
 
         ArrayList<String> colors = new ArrayList<String>();
@@ -36,6 +38,7 @@ View layout ;
         colors.add("White");
         colors.add("Yellow");
         colors.add("Cyan");
+        colors.add("Purple");
         final BaseAdapter adapter = new CustomAdapter(MainActivity.this, colors);
         choose.setAdapter(adapter);
         choose.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -48,30 +51,28 @@ View layout ;
                 // layout.setBackgroundColor();
                 if (p.matches("Red")) {
                     openActivity2(p);
-
-                   // layout.setBackgroundColor(Color.RED);
-
                 } else if (p.matches("Blue")) {
                     openActivity2(p);
-                    //layout.setBackgroundColor(Color.BLUE);
                 } else if (p.matches("Green")) {
-                    layout.setBackgroundColor(Color.GREEN);
+
                     openActivity2(p);
                 } else if (p.matches("Pink")) {
-                    layout.setBackgroundColor(Color.MAGENTA);
+
                     openActivity2(p);
                 }else if (p.matches("Gray")) {
                     openActivity2(p);
-                    layout.setBackgroundColor(Color.GRAY);
+
                 } else if (p.matches("White")){
                     openActivity2(p);
-                  //  layout.setBackgroundColor(Color.WHITE);
+
                 }else if (p.matches("Yellow")){
                     openActivity2(p);
-                    //layout.setBackgroundColor(Color.YELLOW);
+
                 }else if (p.matches("Cyan")){
                     openActivity2(p);
-                    //layout.setBackgroundColor(Color.CYAN);
+
+                } else if (p.matches("Purple")){
+                    openActivity2(p);
                 }
             }
         });

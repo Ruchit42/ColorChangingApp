@@ -45,10 +45,13 @@ public class CanvasActivity extends AppCompatActivity {
         } else if (colorww.matches("Cyan")){
             view.setBackgroundColor(Color.CYAN);
             tv.setText(colorww);
+        } else if (colorww.matches("Purple")){
+            view.setBackgroundColor(Color.rgb(128,0,128));
+            tv.setText(colorww);
         }
        // String text1 = intent.getStringExtra("Red",0);
 
-        setTitle("Activity 2");
+        setTitle("CanvasActivity");
 
 
     }

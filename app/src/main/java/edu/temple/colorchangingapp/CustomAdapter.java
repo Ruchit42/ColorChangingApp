@@ -52,6 +52,8 @@ public class CustomAdapter extends BaseAdapter {
             textView.setBackgroundColor(Color.YELLOW);
         } else if (position ==7 ){
             textView.setBackgroundColor(Color.CYAN);
+        } else if (position == 8){
+            textView.setBackgroundColor(Color.rgb(128,0,128));
         }
         textView.setText(getItem(position).toString());
 

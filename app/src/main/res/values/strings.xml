@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ColorChangingApp</string>
+    <string name = "Title">Welcome, Please choose a color</string>
 </resources>
