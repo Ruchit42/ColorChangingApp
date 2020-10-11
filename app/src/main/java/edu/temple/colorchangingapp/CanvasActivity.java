@@ -21,33 +21,33 @@ public class CanvasActivity extends AppCompatActivity {
         tv = (TextView) findViewById(R.id.textView3);
         if(colorww.matches("Red")){
             view.setBackgroundColor(Color.RED);
-            tv.setText(colorww);
+            tv.setText(R.string.color_red);
 
         }else if(colorww.matches("Blue")){
             view.setBackgroundColor(Color.BLUE);
-            tv.setText(colorww);
+            tv.setText(R.string.color_blue);
         }else if (colorww.matches("Green")){
             view.setBackgroundColor(Color.GREEN);
-            tv.setText(colorww);
+            tv.setText(R.string.color_green);
         }else if (colorww.matches("Pink") ){
 
             view.setBackgroundColor(Color.MAGENTA);
-            tv.setText(colorww);
+            tv.setText(R.string.color_pink);
         } else if (colorww.matches("Gray") ){
             view.setBackgroundColor(Color.GRAY);
-            tv.setText(colorww);
+            tv.setText(R.string.color_gray);
         }else if (colorww.matches("White")){
             view.setBackgroundColor(Color.WHITE);
-            tv.setText(colorww);
+            tv.setText(R.string.color_white);
         }else if (colorww.matches("Yellow") ){
             view.setBackgroundColor(Color.YELLOW);
-            tv.setText(colorww);
+            tv.setText(R.string.color_yellow);
         } else if (colorww.matches("Cyan")){
             view.setBackgroundColor(Color.CYAN);
-            tv.setText(colorww);
+            tv.setText(R.string.color_cyan);
         } else if (colorww.matches("Purple")){
             view.setBackgroundColor(Color.rgb(128,0,128));
-            tv.setText(colorww);
+            tv.setText(R.string.color_purple);
         }
        // String text1 = intent.getStringExtra("Red",0);
 

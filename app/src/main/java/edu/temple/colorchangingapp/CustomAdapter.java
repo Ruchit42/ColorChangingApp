@@ -10,20 +10,20 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends BaseAdapter {
   Context context;
-  ArrayList colors;
+    String[] colors_;
 
-  public CustomAdapter(Context context, ArrayList<String> colors){
+  public CustomAdapter(Context context, String[] colors_){
       this.context = context;
-      this.colors = colors;
+      this.colors_ = colors_;
   }
     @Override
     public int getCount() {
-        return colors.size();
+        return colors_.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return colors.get(position);
+        return colors_[(position)];
     }
 
     @Override

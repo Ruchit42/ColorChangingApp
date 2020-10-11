@@ -12,4 +12,17 @@
     <string name="color_yellow">Yellow</string>
     <string name="color_cyan">Cyan</string>
     <string name="color_purple">Purple</string>
+    <string name="testing123">it works</string>
+
+    <string-array name="all_colors">
+        <String>Red</String>
+        <String>Blue</String>
+        <String>Green</String>
+        <String>Pink</String>
+        <String>Gray</String>
+        <String>White</String>
+        <String>Yellow</String>
+        <String>Cyan</String>
+        <String>Purple</String>
+    </string-array>
 </resources>

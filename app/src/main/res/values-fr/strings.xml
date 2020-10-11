@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ColorChangingApp</string>
+    <string name = "Title">Bienvenue, veuillez choisir une couleur</string>
+    <string name="Activity_one_name">Activité de la palette</string>
+    <string name="Activity_two_name">Activité de toile</string>
+    <string name="color_red">Rouge</string>
+    <string name="color_blue">Bleu</string>
+    <string name="color_green">Vert</string>
+    <string name="color_pink">Rose</string>
+    <string name="color_gray">Gris</string>
+    <string name="color_white">Blanc</string>
+    <string name="color_yellow">Jaune</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_purple">Violet</string>
+    <string name="testing123">Ça marche</string>
+
+    <string-array name="all_colors">
+        <String>Rouge</String>
+        <String>Bleu</String>
+        <String>Vert</String>
+        <String>Rose</String>
+        <String>Gris</String>
+        <String>Blanc</String>
+        <String>Jaune</String>
+        <String>Cyan</String>
+        <String>Violet</String>
+    </string-array>
+
+
+</resources>

@@ -4,6 +4,7 @@ package edu.temple.colorchangingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.icu.text.CaseMap;
 import android.os.Bundle;
 import android.view.View;
@@ -29,17 +30,20 @@ View layout ;
         setTitle(R.string.Activity_one_name);
 
 
-        ArrayList<String> colors = new ArrayList<String>();
-        colors.add("Red");
-        colors.add("Blue");
-        colors.add("Green");
-        colors.add("Pink");
-        colors.add("Gray");
-        colors.add("White");
-        colors.add("Yellow");
-        colors.add("Cyan");
-        colors.add("Purple");
-        final BaseAdapter adapter = new CustomAdapter(MainActivity.this, colors);
+//        ArrayList<String> colors = new ArrayList<String>();
+//        colors.add("Red");
+//        colors.add("Blue");
+//        colors.add("Green");
+//        colors.add("Pink");
+//        colors.add("Gray");
+//        colors.add("White");
+//        colors.add("Yellow");
+//        colors.add("Cyan");
+//        colors.add("Purple");
+        Resources res = getResources();
+        final String[] colors_ = res.getStringArray(R.array.all_colors);
+
+        final BaseAdapter adapter = new CustomAdapter(MainActivity.this, colors_);
         choose.setAdapter(adapter);
         choose.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -49,29 +53,29 @@ View layout ;
                // view.setBackgroundColor(Color.WHITE);
 
                 // layout.setBackgroundColor();
-                if (p.matches("Red")) {
+                if (p.matches(colors_[0])) {
                     openActivity2(p);
-                } else if (p.matches("Blue")) {
+                } else if (p.matches(colors_[1])) {
                     openActivity2(p);
-                } else if (p.matches("Green")) {
+                } else if (p.matches(colors_[2])) {
 
                     openActivity2(p);
-                } else if (p.matches("Pink")) {
+                } else if (p.matches(colors_[3])) {
 
                     openActivity2(p);
-                }else if (p.matches("Gray")) {
+                }else if (p.matches(colors_[4])) {
                     openActivity2(p);
 
-                } else if (p.matches("White")){
+                } else if (p.matches(colors_[5])){
                     openActivity2(p);
 
-                }else if (p.matches("Yellow")){
+                }else if (p.matches(colors_[6])){
                     openActivity2(p);
 
-                }else if (p.matches("Cyan")){
+                }else if (p.matches(colors_[7])){
                     openActivity2(p);
 
-                } else if (p.matches("Purple")){
+                } else if (p.matches(colors_[8])){
                     openActivity2(p);
                 }
             }
