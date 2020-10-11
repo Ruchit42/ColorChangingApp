@@ -15,7 +15,7 @@ public class CanvasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canvas);
         view = findViewById(R.id.background);
-        setTitle("Activity 2");
+        setTitle(R.string.Activity_two_name);
         Intent intent = getIntent();
         String colorww = getIntent().getStringExtra("message_key");
         tv = (TextView) findViewById(R.id.textView3);
@@ -51,7 +51,7 @@ public class CanvasActivity extends AppCompatActivity {
         }
        // String text1 = intent.getStringExtra("Red",0);
 
-        setTitle("CanvasActivity");
+
 
 
     }

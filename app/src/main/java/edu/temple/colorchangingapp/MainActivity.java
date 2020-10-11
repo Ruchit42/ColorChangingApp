@@ -25,8 +25,8 @@ View layout ;
         setContentView(R.layout.activity_main);
         choose = findViewById(R.id.myView);
         layout = findViewById(R.id.layout);
-        System.out.println(R.string.Title);
-        setTitle("PalateActivity");
+
+        setTitle(R.string.Activity_one_name);
 
 
         ArrayList<String> colors = new ArrayList<String>();

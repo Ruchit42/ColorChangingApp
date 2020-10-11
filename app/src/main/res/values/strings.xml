@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">ColorChangingApp</string>
     <string name = "Title">Welcome, Please choose a color</string>
+    <string name="Activity_one_name">Palette Activity</string>
+    <string name="Activity_two_name">Canvas Activity</string>
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_green">Green</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_gray">Gray</string>
+    <string name="color_white">White</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_purple">Purple</string>
 </resources>
