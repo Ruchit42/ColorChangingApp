@@ -54,38 +54,38 @@ View layout ;
 
                 // layout.setBackgroundColor();
                 if (p.matches(colors_[0])) {
-                    openActivity2(p);
+                    openActivity2(0);
                 } else if (p.matches(colors_[1])) {
-                    openActivity2(p);
+                    openActivity2(1);
                 } else if (p.matches(colors_[2])) {
 
-                    openActivity2(p);
+                    openActivity2(2);
                 } else if (p.matches(colors_[3])) {
 
-                    openActivity2(p);
+                    openActivity2(3);
                 }else if (p.matches(colors_[4])) {
-                    openActivity2(p);
+                    openActivity2(4);
 
                 } else if (p.matches(colors_[5])){
-                    openActivity2(p);
+                    openActivity2(5);
 
                 }else if (p.matches(colors_[6])){
-                    openActivity2(p);
+                    openActivity2(6);
 
                 }else if (p.matches(colors_[7])){
-                    openActivity2(p);
+                    openActivity2(7);
 
                 } else if (p.matches(colors_[8])){
-                    openActivity2(p);
+                    openActivity2(8);
                 }
             }
         });
 
     }
-    public void openActivity2(String color){
+    public void openActivity2(int color_posotion){
 
         Intent intent = new Intent (this,CanvasActivity.class);
-        intent.putExtra("message_key",color);
+        intent.putExtra("message_key",color_posotion);
         startActivity(intent);
     }
 }

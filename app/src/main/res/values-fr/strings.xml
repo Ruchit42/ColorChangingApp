@@ -16,15 +16,15 @@
     <string name="testing123">Ça marche</string>
 
     <string-array name="all_colors">
-        <String>Rouge</String>
-        <String>Bleu</String>
-        <String>Vert</String>
-        <String>Rose</String>
-        <String>Gris</String>
-        <String>Blanc</String>
-        <String>Jaune</String>
-        <String>Cyan</String>
-        <String>Violet</String>
+        <item>Rouge</item>
+        <item>Bleu</item>
+        <item>Vert</item>
+        <item>Rose</item>
+        <item>Gris</item>
+        <item>Blanc</item>
+        <item>Jaune</item>
+        <item>Cyan</item>
+        <item>Violet</item>
     </string-array>
 
 

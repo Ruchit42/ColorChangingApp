@@ -15,14 +15,14 @@
     <string name="testing123">it works</string>
 
     <string-array name="all_colors">
-        <String>Red</String>
-        <String>Blue</String>
-        <String>Green</String>
-        <String>Pink</String>
-        <String>Gray</String>
-        <String>White</String>
-        <String>Yellow</String>
-        <String>Cyan</String>
-        <String>Purple</String>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Pink</item>
+        <item>Gray</item>
+        <item>White</item>
+        <item>Yellow</item>
+        <item>Cyan</item>
+        <item>Purple</item>
     </string-array>
 </resources>

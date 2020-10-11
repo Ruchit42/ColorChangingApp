@@ -17,35 +17,36 @@ public class CanvasActivity extends AppCompatActivity {
         view = findViewById(R.id.background);
         setTitle(R.string.Activity_two_name);
         Intent intent = getIntent();
-        String colorww = getIntent().getStringExtra("message_key");
+        int colorww = getIntent().getIntExtra("message_key",0);
+      //  int num = getIntent().getIntExtra("message_key");
         tv = (TextView) findViewById(R.id.textView3);
-        if(colorww.matches("Red")){
+        if(colorww == 0){
             view.setBackgroundColor(Color.RED);
             tv.setText(R.string.color_red);
 
-        }else if(colorww.matches("Blue")){
+        }else if(colorww == 1){
             view.setBackgroundColor(Color.BLUE);
             tv.setText(R.string.color_blue);
-        }else if (colorww.matches("Green")){
+        }else if (colorww==2){
             view.setBackgroundColor(Color.GREEN);
             tv.setText(R.string.color_green);
-        }else if (colorww.matches("Pink") ){
+        }else if (colorww==3 ){
 
             view.setBackgroundColor(Color.MAGENTA);
             tv.setText(R.string.color_pink);
-        } else if (colorww.matches("Gray") ){
+        } else if (colorww ==4  ){
             view.setBackgroundColor(Color.GRAY);
             tv.setText(R.string.color_gray);
-        }else if (colorww.matches("White")){
+        }else if (colorww == 5){
             view.setBackgroundColor(Color.WHITE);
             tv.setText(R.string.color_white);
-        }else if (colorww.matches("Yellow") ){
+        }else if (colorww==6 ){
             view.setBackgroundColor(Color.YELLOW);
             tv.setText(R.string.color_yellow);
-        } else if (colorww.matches("Cyan")){
+        } else if (colorww==7){
             view.setBackgroundColor(Color.CYAN);
             tv.setText(R.string.color_cyan);
-        } else if (colorww.matches("Purple")){
+        } else if (colorww==8){
             view.setBackgroundColor(Color.rgb(128,0,128));
             tv.setText(R.string.color_purple);
         }
